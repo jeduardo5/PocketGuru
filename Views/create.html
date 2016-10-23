@@ -8,15 +8,28 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="css/search_style.css">
+        <link rel="stylesheet" type="text/css" href="css/create_style.css">
 
     </head>
 
     <body>
+		<form>
+			<div class="form-group">
+				<label for="title">Button name: </label>
+				<input type="text" class="form-control" id="title" name = "title" maxlength = "12">
+			</div>
+			<div class="form-group">
+				<label for="phrase">Phrase:</label>
+				 <textarea class="form-control" rows="5" id="phrase" name = "phrase" maxlength = "128"></textarea>
+			</div>
+			<button type="submit" class="btn btn-lg">Create</button>
+		</form>
+	
+	
         <div id="footer">
             <ul>
-                <li><a class="active" href="#home">Search</a></li>
-                <li><a href="#news">Buttons</a></li>
+                <li><a class="active" href="#home">Type to Guru</a></li>
+                <li><a href="#guru_says">Saved Ask Gurus</a></li>
             </ul>
         </div>
     </body>
