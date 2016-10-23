@@ -14,12 +14,14 @@ ul {
     position: fixed;
     bottom: 0;
     width: 100%;
+	height: 100px;
 }
 
 li {
     float: left;
     width: 50%;
     border-right: 1px solid #bbb;
+	height: 100px;
 }
 
 li a {
@@ -28,13 +30,17 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+	height: 100px;
+	line-height: 70px;
+	font-size: xx-large;
+	font-weight: bold;
 }
 
 li a:hover {
     text-decoration: none;
     background: white;
     color: black;
-    font-size: 130%;
+    font-size: xx-large;
     font-weight: bold;
 }
 
@@ -44,12 +50,19 @@ li a:hover {
 
 #ask_guru {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 130%;
+    /*margin-left: 10%;*/
+    margin-top: 145%;
+	font-size: x-large;
 }
 
 #ask_guru input {
-    padding: 10px 12px;
+    padding: 20px 20px;
+	font-weight: bold;
+
+}
+
+#button {
+	background-color: #e68a00;
+	border: none;
 }
 
