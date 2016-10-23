@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!-- app1 module; as well as ng-init which is a 'directive'
+which initializes application data by assigning different values to variables-->
+<html ng-app="app1" ng-init="askGuru = {myFeel: 'unmotivated', hisFeel: 'happy'};
+quotes = {unmotivated: 'Be yourself. Lazy ass', happy: 'Glad you're doing sooo great'}]">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+        <title>Pocket Guru | Wisdom in your pocket</title>
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="css/index_style.css" type="text/css"/>
+        
+        <script src="node_modules/angular/angular.min.js"></script>
+        <script src="js/test.js"></script>
+
+        <!--Downloaded angular into project folder instead-->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>-->
+    </head>
+
+    <body>
+        <!--Basically we are saying this div element is going to be a view as well as all the other
+        elements inside of it. Use our scope component to provide data to our view-->
+        <div ng-controller="ctrl1">
+            <span>Values:</span>
+            <input type="text" ng-model="first" />
+            <input type="text" ng-model="second" />
+
+            <!--Click event to update value - button -->
+            <button ng-click="updateValue()">Sum</button>
+            <br><br>
+
+            <!--Can display scope value inside using expression {{}}-->
+
+            {{calculation}}
+            
+        </div>
+
+        <!--<div>
+            <label>Ask Guru:</label>
+            <input type="text" ng-model="yourName" placeholder="Enter a name here">
+            <hr>
+            <h1>Hello {{yourName}}!</h1>
+        </div>-->
+    </body>
+
+</html>
