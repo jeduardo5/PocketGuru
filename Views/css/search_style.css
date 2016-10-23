@@ -30,10 +30,12 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+li a:hover {
     text-decoration: none;
     background: white;
     color: black;
+    font-size: 130%;
+    font-weight: bold;
 }
 
 .active {
@@ -50,3 +52,4 @@ li a:hover:not(.active) {
 #ask_guru input {
     padding: 10px 12px;
 }
+

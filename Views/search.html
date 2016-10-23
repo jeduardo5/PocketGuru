@@ -14,14 +14,16 @@
 
     <body>
         <div id="ask_guru">
-            <input type="text" name="ask_guru" placeholder="I feel like skipping the gym.">
+            <input type="text" name="ask_guru" placeholder="I feel like skipping the gym." maxlength="200">
             <input type="submit" value="Ask Guru">
         </div>
 
         <div id="footer">
             <ul>
-                <li><a class="active" href="#home">Search</a></li>
-                <li><a href="#news">Buttons</a></li>
+                <span id = "nav">
+                    <li><a class="active" href="#home">Type to Guru</a></li>
+                    <li><a href="#guru_says">Saved Ask Gurus</a></li>
+                </span>
             </ul>
         </div>
     </body>
