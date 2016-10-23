@@ -31,11 +31,22 @@ li a {
 }
 
 li a:hover:not(.active) {
-    background-color: #111;
     text-decoration: none;
+    background: white;
+    color: black;
 }
 
 .active {
-    background-color: #4CAF50;
     text-decoration: none;
+}
+
+#ask_guru {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130%;
+}
+
+#ask_guru input {
+    padding: 10px 12px;
 }
